@@ -1,10 +1,36 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Net.Http.Headers;
 
 namespace Circuits.Engine.IO;
+
+public class InputCollection : PortCollectionBase<IInput>
+{
+	public InputCollection() : base()
+	{
+	}
+
+	public override Input<TValue?> CreatePort<TValue>(TValue? defaultValue = default)
+		where TValue : default
+	{
+		Input<TValue?> input = new(defaultValue);
+		Add(input);
+		return input;
+	}
+
+	public override Input<TValue> GetPort<TValue>(IEntity entity)
+		=> (Input<TValue>)this[entity];
+
+	public override TValue GetValue<TValue>(IEntity entity)
+	{
+		Input<TValue> input = (Input<TValue>)GetPort(entity);
+		return input.Value;
+	}
+}
 
 /// <summary>
 ///		Agnostic-type Input Collection
 /// </summary>
+/*
 public class InputCollection
 {
 	private readonly Dictionary<Guid, IInput> _inputs;
@@ -81,3 +107,4 @@ public class InputCollection
 		return success ? value : defaultValue;
 	}
 }
+*/

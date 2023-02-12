@@ -2,7 +2,7 @@
 
 namespace Circuits.Engine.IO;
 
-public interface IOutput
+public interface IOutput : IEntity
 {
 	object? Value { get; }
 }
