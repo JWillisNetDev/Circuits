@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Circuits.Engine", "Circuits.Engine\Circuits.Engine.csproj", "{694748B5-324E-4C16-A639-9708D6AB02B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Circuits.Engine.Tests", "Circuits.Engine.Tests\Circuits.Engine.Tests.csproj", "{E432DD2B-1B45-4B17-8F6A-E6A5137D895D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{694748B5-324E-4C16-A639-9708D6AB02B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{694748B5-324E-4C16-A639-9708D6AB02B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{694748B5-324E-4C16-A639-9708D6AB02B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{694748B5-324E-4C16-A639-9708D6AB02B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E432DD2B-1B45-4B17-8F6A-E6A5137D895D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E432DD2B-1B45-4B17-8F6A-E6A5137D895D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E432DD2B-1B45-4B17-8F6A-E6A5137D895D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E432DD2B-1B45-4B17-8F6A-E6A5137D895D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {162E5478-42C8-4080-BF2D-CD2CC655E530}
+	EndGlobalSection
+EndGlobal
